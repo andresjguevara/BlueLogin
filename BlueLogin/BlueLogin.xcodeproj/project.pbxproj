@@ -14,6 +14,9 @@
 		EDC85E0B24EAC0930045E421 /* BlueLogin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDC85E0924EAC0930045E421 /* BlueLogin.xcdatamodeld */; };
 		EDC85E0D24EAC0930045E421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC85E0C24EAC0930045E421 /* Assets.xcassets */; };
 		EDC85E1024EAC0930045E421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC85E0E24EAC0930045E421 /* LaunchScreen.storyboard */; };
+		EDC85E1A24EAFBED0045E421 /* DecodableStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC85E1924EAFBED0045E421 /* DecodableStructs.swift */; };
+		EDC85E1C24EB07920045E421 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC85E1B24EB07920045E421 /* UserManager.swift */; };
+		EDC85E2424EC04A70045E421 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC85E2324EC04A70045E421 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		EDC85E0C24EAC0930045E421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC85E0F24EAC0930045E421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDC85E1124EAC0930045E421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC85E1924EAFBED0045E421 /* DecodableStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableStructs.swift; sourceTree = "<group>"; };
+		EDC85E1B24EB07920045E421 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		EDC85E2324EC04A70045E421 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,51 @@
 		EDC85DFF24EAC0930045E421 /* BlueLogin */ = {
 			isa = PBXGroup;
 			children = (
-				EDC85E0024EAC0930045E421 /* AppDelegate.swift */,
-				EDC85E0224EAC0930045E421 /* SceneDelegate.swift */,
-				EDC85E0424EAC0930045E421 /* ViewController.swift */,
-				EDC85E0624EAC0930045E421 /* Main.storyboard */,
-				EDC85E0C24EAC0930045E421 /* Assets.xcassets */,
-				EDC85E0E24EAC0930045E421 /* LaunchScreen.storyboard */,
+				EDC85E1F24EC03D70045E421 /* Controllers */,
+				EDC85E2224EC043C0045E421 /* Resources */,
+				EDC85E2024EC03FF0045E421 /* Views */,
+				EDC85E2124EC040F0045E421 /* DataModel */,
 				EDC85E1124EAC0930045E421 /* Info.plist */,
-				EDC85E0924EAC0930045E421 /* BlueLogin.xcdatamodeld */,
 			);
 			path = BlueLogin;
+			sourceTree = "<group>";
+		};
+		EDC85E1F24EC03D70045E421 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDC85E0424EAC0930045E421 /* ViewController.swift */,
+				EDC85E2324EC04A70045E421 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EDC85E2024EC03FF0045E421 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDC85E0C24EAC0930045E421 /* Assets.xcassets */,
+				EDC85E0624EAC0930045E421 /* Main.storyboard */,
+				EDC85E0E24EAC0930045E421 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDC85E2124EC040F0045E421 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDC85E1924EAFBED0045E421 /* DecodableStructs.swift */,
+				EDC85E0924EAC0930045E421 /* BlueLogin.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		EDC85E2224EC043C0045E421 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EDC85E1B24EB07920045E421 /* UserManager.swift */,
+				EDC85E0024EAC0930045E421 /* AppDelegate.swift */,
+				EDC85E0224EAC0930045E421 /* SceneDelegate.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC85E1C24EB07920045E421 /* UserManager.swift in Sources */,
 				EDC85E0524EAC0930045E421 /* ViewController.swift in Sources */,
 				EDC85E0124EAC0930045E421 /* AppDelegate.swift in Sources */,
+				EDC85E1A24EAFBED0045E421 /* DecodableStructs.swift in Sources */,
 				EDC85E0324EAC0930045E421 /* SceneDelegate.swift in Sources */,
+				EDC85E2424EC04A70045E421 /* HomeViewController.swift in Sources */,
 				EDC85E0B24EAC0930045E421 /* BlueLogin.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
